@@ -11,8 +11,9 @@ function enlarge(e) {
   imgElement.src = bigImage;
   myElement.appendChild(imgElement);
 
-  }
+  
   e.target.addEventListener('mouseout', handler , false);
+  }
   function handler(d) {
     var removeNode = d.target.parentNode.querySelector('div.preview');
     removeNode.parentNode.removeChild(removeNode);
@@ -20,4 +21,3 @@ function enlarge(e) {
    console.log(handler);
    }
 }
-
